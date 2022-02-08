@@ -7,7 +7,9 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        xNok/jx-quickstart: true
         xNok/jx3-minikube: true
+        xNok/jx3-quckstart2: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -19,7 +21,9 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        xNok/jx-quickstart: merge
         xNok/jx3-minikube: merge
+        xNok/jx3-quckstart2: merge
       queries:
       - labels:
         - approved
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - xNok/jx3-minikube
+        - xNok/jx-quickstart
+        - xNok/jx3-quckstart2
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +47,8 @@ data:
         - needs-rebase
         repos:
         - xNok/jx3-minikube
+        - xNok/jx-quickstart
+        - xNok/jx3-quckstart2
       target_url: http://lighthouse-jx.172.26.144.64.nip.io/merge/status
 kind: ConfigMap
 metadata:
