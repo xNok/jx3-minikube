@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: xNok
+    provider: github
+    repository: jx3-quckstart2
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: xnok-jx3-quckstart2
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/xNok/jx3-quckstart2.git
+  org: xNok
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-quckstart2
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/xNok/jx3-quckstart2

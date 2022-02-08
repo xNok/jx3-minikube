@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: xNok
+    provider: github
+    repository: jx-quickstart
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: xnok-jx-quickstart
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/xNok/jx-quickstart.git
+  org: xNok
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-quickstart
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/xNok/jx-quickstart
